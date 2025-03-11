@@ -21,7 +21,15 @@ a {
 }
 li {
   display: inline;
-  margin: 0px 10px;
+  margin: 0px 8px;
+}
+/* UTILITY */
+.badge {
+  background-color: #ff0100;
+  margin-right: 3px;
+  color: white;
+  padding: 5px;
+  z-index: 3;
 }
 
 /* HEADER */
@@ -33,4 +41,54 @@ header .row {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
+}
+/* MAIN */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.card {
+  padding-top: 60px;
+  width: calc(100% / 3);
+}
+
+.card .card-image {
+  position: relative;
+}
+.discount {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  align-items: center;
+}
+.heart {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  background-color: white;
+  color: black;
+  z-index: 3;
+  padding: 8px 12px;
+  font-size: 2rem;
+  width: 2.5rem;
+  text-align: center;
+}
+.badge.material {
+  background-color: #008000;
+}
+
+.card .card-hover {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.card:hover .card-hover {
+  display: flex;
 }
