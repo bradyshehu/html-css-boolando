@@ -39,7 +39,6 @@ header {
   color: white;
 }
 header .row {
-  justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
 }
@@ -79,7 +78,7 @@ header .row {
   background-color: #008000;
 }
 
-.card .card-hover {
+.card-image .card-hover {
   position: absolute;
   display: none;
   top: 0px;
@@ -87,7 +86,7 @@ header .row {
   bottom: 0px;
   right: 0px;
 }
-.card:hover .card-hover {
+.card-image:hover .card-hover {
   display: flex;
 }
 .price {
